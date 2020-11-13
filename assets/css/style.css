@@ -8,6 +8,7 @@ body {
 
 h1, h2, h3, h4 {
     font-weight: bold;
+    letter-spacing: 3px;
 }
 
 /* Containers */
@@ -40,6 +41,7 @@ h1, h2, h3, h4 {
 
 a {
     text-decoration: none;
+    color: #b51c00;
 }
 
 /* Navbar */
