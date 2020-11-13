@@ -66,6 +66,7 @@ a {
 #callout {
     height: 100vh;
     background-image: url('../images/whiskey-background.jpg');
+    background-color: black;
     background-size: cover;
     background-attachment: fixed;
     color: #e7e0e6;
