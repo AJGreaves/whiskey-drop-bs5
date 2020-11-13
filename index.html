@@ -10,7 +10,7 @@
         integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+    <link href="assets/css/style.css" rel="stylesheet">
 
     <title>Whiskey Drop | Taste a new whiskey every month</title>
 </head>
@@ -18,76 +18,101 @@
 <body>
 
     <body>
-        <main class="container">
-
-            <!-- Sale alert -->
-            <div class="alert alert-warning">
-                <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a
-                    href="#">See here for details!</a>
+        <!-- Nav alert container-->
+        <div id="nav-alert-container" class="container-fluid">
+            <div class="row no-gutters">
+                <div id="alert" class="alert alert-warning col-12">
+                    <strong class="pr-3">Sale Now On!</strong> Get a 12-month subscription for the price of 6
+                    <a class="pl-3" href="#">Click here for details!</a>
+                </div>
             </div>
+            <!-- Sale alert -->
+
 
             <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Whiskey Drop</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-toggle="dropdown" aria-expanded="false">
-                                    Whiskeys
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Irish</a></li>
-                                    <li><a class="dropdown-item" href="#">Scottish</a></li>
-                                    <li><a class="dropdown-item" href="#">Japanese</a></li>
-                                    <li><a class="dropdown-item" href="#">American</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="d-flex ml-auto">
-                            <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
-                            <a href="#" class="btn btn-success">Sign In</a>
+            <div class="row no-gutters">
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-dark col-12">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Whiskey Drop</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-toggle="dropdown" aria-expanded="false">
+                                        Whiskeys
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Irish</a></li>
+                                        <li><a class="dropdown-item" href="#">Scottish</a></li>
+                                        <li><a class="dropdown-item" href="#">Japanese</a></li>
+                                        <li><a class="dropdown-item" href="#">American</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="d-flex ml-auto">
+                                <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+                                <a href="#" class="btn btn--cta btn--red">Sign In / Sign Up</a>
+                            </div>
                         </div>
+
                     </div>
+                </nav>
+            </div>
 
-                </div>
-            </nav>
+        </div>
 
+        <!-- Callout container -->
+        <div id="callout-container" class="container-fluid">
             <!-- Callout -->
             <header id="callout" class="row align-items-center">
-                <div class="col-12 text-center">
+                <div class="opaque-overlay"></div>
+                <div id="callout-content" class="col-12 text-center">
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
+                    <hr class="block-divider block-divider--red">
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
                         <s class="d-none d-sm-inline">€19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free!</mark></strong></p>
-                    <button class="btn btn-lg btn-success mt-3 mb-2" data-toggle="modal" data-target="#signUpModal">Sign
+                    <button class="btn btn-lg btn--cta btn--red mt-3 mb-2" data-toggle="modal"
+                        data-target="#signUpModal">Sign
                         Up!</button>
-                    <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink
+                    <p class="text-muted"><small>You must be over 18 to sign up to our service.<br> Please, drink
                             responsibly.</small></p>
                 </div>
             </header>
+        </div>
 
-
-
-            <hr>
+        <div id="quotes-container" class="container">
 
             <!-- Quotes -->
-            <section class="quotes row">
+            <section class="quotes row content-container">
                 <header class="col-12 text-center">
-                    <h2>Quotes</h2>
+                    <h2 class="text-uppercase">Quotes</h2>
+                    <hr class="block-divider">
                 </header>
+
+                <figure class="quote col-12 col-md-6">
+                    <div class="d-none d-sm-block quote-img">
+                        <img src="assets/images/guy-image.png" class="rounded-circle mr-3" height=100 width=100>
+                    </div>
+                    <blockquote class="blockquote">
+                        <p>Legendary service! I haven't been sober for months!</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        John Smith
+                    </figcaption>
+                </figure>
 
                 <figure class="quote col-12 col-md-6">
                     <div class="d-none d-sm-block quote-img">
@@ -101,73 +126,62 @@
                     </figcaption>
                 </figure>
 
-                <figure class="quote col-12 col-md-6">
-                    <div class="d-none d-sm-block quote-img">
-                        <img src="assets/images/guy-image.png" class="rounded-circle mr-3" height=100 width=100>
-                    </div>
-                    <blockquote class="blockquote">
-                        <p>I haven't been sober for months!</p>
-                    </blockquote>
-                    <figcaption class="blockquote-footer">
-                        John Smith
-                    </figcaption>
-                </figure>
             </section>
 
-            <hr>
+        </div>
 
-            <!-- Features -->
-            <section class="features row text-center">
-                <header class="col-12">
-                    <h2>Features</h2>
-                </header>
+        <!-- Features -->
+        <div id="features-container" class="container-fluid">
+            <section id="features" class="features container text-center content-container">
+                <div class="row">
+                    <header class="col-12">
+                        <h2 class="text-uppercase">Features</h2>
+                        <hr class="block-divider block-divider--white">
+                    </header>
 
-                <div class="feature col-12 col-md-6 col-lg-4">
-
-                    <div class="card">
-                        <img src="assets/images/feature1.jpg" class="card-img-top" alt="feature 1 image">
-                        <div class="card-body">
-                            <h5 class="card-title">Feature 1 <span class="badge bg-success">NEW!</span></h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat</p>
-                            <a href="#" class="btn btn-success">Read more</a>
+                    <div class="feature col-12 col-md-6 col-lg-4">
+                        <div class="card feature-card">
+                            <img src="assets/images/feature1.jpg" class="card-img-top" alt="feature 1 image">
+                            <div class="card-body">
+                                <h5 class="card-title">Feature 1 <span class="badge badge-new">NEW!</span></h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                    omnis delectus. Cupiditate facilis consequatur incidunt porro consectetur obcaecati
+                                    voluptate autem, ea quod voluptates accusamus? Esse porro vel explicabo dicta culpa!
+                                </p>
+                                <a href="#" class="btn btn-sm btn-light">Read more</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="feature col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img src="assets/images/feature2.jpg" class="card-img-top" alt="feature 2 image">
-                        <div class="card-body">
-                            <h5 class="card-title">Feature 2</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat</p>
-                            <a href="#" class="btn btn-success">Read more</a>
+
+                    <div class="feature col-12 col-md-6 col-lg-4">
+                        <div class="card feature-card">
+                            <img src="assets/images/feature2.jpg" class="card-img-top" alt="feature 2 image">
+                            <div class="card-body">
+                                <h5 class="card-title">Feature 2</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                    omnis delectus. Cupiditate facilis consequatur incidunt porro consectetur obcaecati
+                                    voluptate autem, ea quod voluptates accusamus? Esse porro vel explicabo dicta culpa!</p>
+                                <a href="#" class="btn btn-sm btn-light">Read more</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="feature col-12 d-md-none d-lg-block col-lg-4">
-                    <div class="card">
-                        <img src="assets/images/feature3.jpg" class="card-img-top" alt="feature 3 image">
-                        <div class="card-body">
-                            <h5 class="card-title">Feature 3</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat</p>
-                            <a href="#" class="btn btn-success">Read more</a>
+
+                    <div class="feature col-12 d-md-none d-lg-block col-lg-4">
+                        <div class="card feature-card">
+                            <img src="assets/images/feature3.jpg" class="card-img-top" alt="feature 3 image">
+                            <div class="card-body">
+                                <h5 class="card-title">Feature 3</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                    omnis delectus. Cupiditate facilis consequatur incidunt porro consectetur obcaecati
+                                    voluptate autem, ea quod voluptates accusamus? Esse porro vel explicabo dicta culpa!</p>
+                                <a href="#" class="btn btn-sm btn-light">Read more</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-        </main>
+        </div>
 
         <!-- Modal -->
         <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
