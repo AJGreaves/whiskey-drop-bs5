@@ -85,6 +85,10 @@ a {
     z-index: 1;
 }
 
+#callout-content .lead {
+    line-height: 2.5rem;
+}
+
 #callout small {
     font-size: 75%;
     font-style: italic;
