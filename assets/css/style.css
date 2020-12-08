@@ -111,6 +111,7 @@ a {
 
 .block-divider {
     width: 75px;
+    background-color: none;
     border-bottom: 5px solid #0b0b0b;
     opacity: 1;
     margin: 30px auto;
