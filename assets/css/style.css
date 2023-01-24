@@ -111,18 +111,17 @@ a {
 
 .block-divider {
     width: 75px;
-    background-color: none;
-    border-bottom: 5px solid #0b0b0b;
+    border-top: 5px solid #0b0b0b;
     opacity: 1;
     margin: 30px auto;
 }
 
 .block-divider--red {
-    border-bottom: 5px solid #b51c00;
+    border-top: 5px solid #b51c00;
 }
 
 .block-divider--white {
-    border-bottom: 5px solid #e7e0e6;
+    border-top: 5px solid #e7e0e6;
 }
 
 /* Buttons */
